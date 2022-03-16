@@ -93,7 +93,7 @@
         {
             "type": "vcs",
             "name": "mota9100/multipay",
-            "url": "https://github.com/multipay/baum.git"
+            "url": "https://github.com/mota9100/multipay.git"
         }
     ],
     "suggest": {
