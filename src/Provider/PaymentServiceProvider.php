@@ -81,12 +81,5 @@ class PaymentServiceProvider extends ServiceProvider
      */
     public function registerEvents()
     {
-        Payment::addPurchaseListener(function ($driver, $invoice) {
-            event(new InvoicePurchasedEvent($driver, $invoice));
-        });
-
-        Payment::addVerifyListener(function ($reciept, $driver, $invoice) {
-            event(new InvoiceVerifiedEvent($reciept, $driver, $invoice));
-        });
     }
 }
